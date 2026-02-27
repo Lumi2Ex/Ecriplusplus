@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 import os
 
-def getHar(String(website)):
+def getHar(website):
     os.makedirs("requests", exist_ok=True)
 
     with sync_playwright() as p:
